@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
-    --nutmeg-primary: hsl(14, 45%, 36%);
-    --dark-raspberry-primary:hsl(332, 51%, 32%);
+	--nutmeg-primary: hsl(14, 45%, 36%);
+	--dark-raspberry-primary: hsl(332, 51%, 32%);
 
-    --white-neutral:hsl(0, 0%, 100%);
-    --rose-white-neutral:hsl(330, 100%, 98%);
-    --eggshell-neutral: hsl(30, 54%, 90%);
-    --light-grey-neutral: hsl(30, 18%, 87%);
-    --wenge-brown-neutral: hsl(30, 10%, 34%);
-    --dark-charcoal-neutral:hsl(24, 5%, 18%);
+	--white-neutral: hsl(0, 0%, 100%);
+	--rose-white-neutral: hsl(330, 100%, 98%);
+	--eggshell-neutral: hsl(30, 54%, 90%);
+	--light-grey-neutral: hsl(30, 18%, 87%);
+	--wenge-brown-neutral: hsl(30, 10%, 34%);
+	--dark-charcoal-neutral: hsl(24, 5%, 18%);
 }
 
 * {
@@ -24,4 +24,53 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+}
+
+body {
+	min-height: 1900px;
+	background-color: var(--eggshell-neutral);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.recipe-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 735px;
+	height: 1710px;
+	padding: 1.5rem;
+	border-radius: 1.15rem;
+	background-color: var(--white-neutral);
+	align-items: left;
+	justify-content: start;
+}
+
+.recipe-container > * {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.recipe-image {
+	padding-top: 2.5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recipe-image img {
+	width: 100%;
+	height: 300px;
+	border-radius: 1.15rem;
+}
+
+.recipe-title {
+	font-family: "Young Serif", sans-serif;
+	font-weight: 400;
+	color: var(--dark-charcoal-neutral);
+	padding-top: 2.5rem;
+	font-size: 2.25rem;
 }
